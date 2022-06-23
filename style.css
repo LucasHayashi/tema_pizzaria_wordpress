@@ -1,0 +1,295 @@
+@import 'css/normalize.css';
+@import 'css/reset.css';
+
+/* Permanent Marker */
+@font-face {
+    font-family: "Permanent Marker";
+    src: url('fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Montserrat */
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --main-body: #F2F2F2;
+    --main-red: #FF8888;
+    --main-green: #128C7E;
+    --main-title-contact: #D5FF90;
+    --main-title: #2C2C2C;
+    --main-description: #323232;
+    --title: 1.2em;
+    --intro-title: 2.4em;
+    --intro-description: 1.2em;
+    --prod-description: 1.2em;
+    --section-title: 2em;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+strong {
+    font-weight: 600;
+}
+
+header nav {
+    background-color: var(--main-red);
+    color: #FFF;
+}
+
+.nav-container, .intro-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto; 
+}
+
+.nav-container {
+    justify-content: space-between;
+}
+
+.intro-container {
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu li {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu li:hover {
+    background-color: #C25356;
+}
+
+.menu li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.brand, .nav-contact-message {
+    font-family: 'Permanent Marker';
+    font-size: var(--title);
+}
+
+.nav-contact-message {
+    color: var(--main-title-contact);
+}
+
+.nav-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.nav-contact-number {
+    padding-right: 5px;
+}
+
+.nav-contact-info a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav-contact-info ion-icon {
+    font-size: 1.25em;
+}
+
+.nav-contact-info a:hover > ion-icon {
+    color: var(--main-title-contact);
+}
+
+/*Introdução*/
+#introducao {
+    background-image: url('img/fundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro-container {
+    min-height: 365px;
+}
+
+.info h1 {
+    font-size: var(--intro-title);
+    font-weight: 500;
+    color: #FFF;
+}
+
+.info p {
+    padding-top: 1em;
+    font-size: var(--intro-description);
+    font-weight: bold;
+    color: #FFF;
+}
+
+#cardapio {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main-title, .item-category {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Permanent Marker';
+}
+
+.main-title {
+    font-size: var(--section-title);
+    color: var(--main-green);
+}
+
+.item-category {
+    font-size: var(--section-title);
+    color: var(--main-red);
+}
+
+.item {
+    padding: 1em 0px;
+}
+
+.item-title {
+    font-size: var(--title);
+    color: var(--main-title);
+    font-weight: 600;
+}
+
+/* div que envolve a descrição e o preço */
+.item-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 3em;
+    padding-top: .5em;
+    line-height: 140%;
+}
+
+.item-description {
+    color: var(--main-description);
+    max-width: 800px;
+}
+
+.item-price {
+    align-self: baseline;
+    color: var(--main-green);
+    font-weight: 600;
+    max-width: 320px;
+}
+
+.nav-container, section, footer {
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+#cardapio article + article {
+    border-top: 1px dashed var(--main-green);
+}
+
+#contato {
+    max-width: 960px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.reservas {
+    max-width: 400px;
+}
+
+.reservas p {
+    line-height: 140%;
+}
+
+.contato-info {
+    max-width: 400px;
+    text-align: center;
+    line-height: 140%;
+}
+
+.contato-info address .contact-type {
+    color: #128C7E;
+    font-weight: 600;
+}
+
+.contato-info address a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    min-height: 89px;
+    background-color: var(--main-red);
+    color: #FFF;
+}
+
+
+.scroll-to-top a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.25em;
+    color: #FFF;
+}
+
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 16px;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }  
+
+    #contato {
+        justify-content: center;
+    }
+
+    footer small {
+        font-size: .8em;
+    }
+}
