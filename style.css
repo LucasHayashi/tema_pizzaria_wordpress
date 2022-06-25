@@ -1,3 +1,14 @@
+/*
+Theme Name: Pizzaria Wordpress
+Theme URI: https://sniperabreu.com.br
+Author: Lucas Hayashi
+Author URI: https://wordpress.org/
+Description: Tema criado para servir de cardápio para restaurantes.
+Tags: pizza, theme, menu, food
+Version: 1.0
+Requires PHP: 7.4
+*/
+
 @import 'css/normalize.css';
 @import 'css/reset.css';
 
@@ -104,48 +115,18 @@ header nav {
     text-decoration: none;
 }
 
-.brand, .nav-contact-message {
+.brand {
     font-family: 'Permanent Marker';
     font-size: var(--title);
 }
 
-.nav-contact-message {
-    color: var(--main-title-contact);
-}
-
-.nav-contact-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-.nav-contact-number {
-    padding-right: 5px;
-}
-
-.nav-contact-info a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #FFF;
-}
-
-.nav-contact-info ion-icon {
-    font-size: 1.25em;
-}
-
-.nav-contact-info a:hover > ion-icon {
-    color: var(--main-title-contact);
-}
-
 /*Introdução*/
 #introducao {
-    background-image: url('img/fundo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .intro-container {
     min-height: 365px;
 }
